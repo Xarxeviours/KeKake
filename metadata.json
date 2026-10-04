@@ -1,0 +1,7 @@
+{
+  "name": "KeKake",
+  "description": "Privacy-first group expense and settlement calculator. Split expenses with up to 50 people, track who paid for what, and get the simplest settlement plan with minimized payments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

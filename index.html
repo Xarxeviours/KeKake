@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeKake – Group Expense Splitter & Who Owes Whom Calculator</title>
+    <meta name="description" content="Easily split expenses with up to 50 people. See who paid, who owes, and the simplest way to settle everyone. No login required." />
+    <meta name="keywords" content="Group Expense Calculator, Split Expenses With Friends, Who Owes Whom Calculator, Trip Expense Splitter, Friends Expense Calculator, Group Bill Splitter, Shared Expense Calculator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KeKake" />
+    <meta property="og:title" content="KeKake – Group Expense Splitter & Who Owes Whom Calculator" />
+    <meta property="og:description" content="Easily split expenses with up to 50 people. See who paid, who owes, and the simplest way to settle everyone. No login required." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KeKake – Group Expense Splitter & Who Owes Whom Calculator" />
+    <meta name="twitter:description" content="Easily split expenses with up to 50 people. See who paid, who owes, and the simplest way to settle everyone. No login required." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "KeKake",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "description": "Privacy-first group expense and settlement calculator. Split expenses with up to 50 people, track who paid for what, and get the simplest settlement plan with minimized payments.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('kekake_theme_mode');
+          var isDark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-neutral-50 dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 antialiased selection:bg-emerald-500/20 selection:text-emerald-700 dark:selection:text-emerald-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
